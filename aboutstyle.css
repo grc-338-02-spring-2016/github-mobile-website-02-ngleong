@@ -1,0 +1,60 @@
+
+body {
+  font-family: sans-serif;
+  font-size: 13.5;
+    }
+h1 {
+  font: Raleway, sans-serif ;
+  color: dimgray;
+  text-align: center;
+  
+    }
+hr {
+  width: 95%;
+  color: dimgray;
+        
+    }
+h2 {
+        font-family: Raleway;
+        color: darkgreen;
+        font-size: 25;
+        text-align: center;
+    }
+a {
+    text-decoration: none; }
+    a:link {  color: black; } 
+    a:visited {  color: black; }
+    a:hover { color: hotpink; }
+    a:active { color: hotpink; }
+        
+menu {
+    display: block;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 100%;
+    margin: 0;
+    float: left;
+    padding: 0px;
+    letter-spacing: 1px;
+    background-color: white;
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    text-align: justify center;
+    color: black;
+}
+footer {
+    display: block;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: blanchedalmond;
+    width: 100%;
+    
+            
+        }    
+    
