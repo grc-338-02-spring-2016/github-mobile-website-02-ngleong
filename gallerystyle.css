@@ -8,6 +8,7 @@ h1 {
   text-align: center;
   
     }
+	
 hr {
   width: 95%;
   color: dimgray;
@@ -26,8 +27,8 @@ a {
     a:hover { color: hotpink; }
     a:active { color: hotpink; }
         
-menu {
-    display: block;
+ul {
+    display: inline;
     overflow-x: auto;
     overflow-y: auto;
     width: 100%;
@@ -42,10 +43,13 @@ menu {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
-    text-align: justify center;
+    text-align: center;
     color: black;
 }
-    img.resize {
+li {
+    display: inline;
+}
+img.resize {
         max-height: 90%;
         max-width: 90%;
     }

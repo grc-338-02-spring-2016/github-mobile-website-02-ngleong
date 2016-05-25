@@ -26,8 +26,8 @@ a {
     a:hover { color: hotpink; }
     a:active { color: hotpink; }
         
-menu {
-    display: block;
+ul {
+    display: inline;
     overflow-x: auto;
     overflow-y: auto;
     width: 100%;
@@ -42,8 +42,11 @@ menu {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
-    text-align: justify center;
+    text-align: center;
     color: black;
+}
+li {
+    display: inline;
 }
 footer {
     display: block;
