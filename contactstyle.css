@@ -48,6 +48,10 @@ ul {
 li {
     display: inline;
 }
+.container {
+    width: 90%;
+    padding-bottom: 15%
+}
 footer {
     display: block;
     height: 60px;
@@ -56,6 +60,10 @@ footer {
     left: 0px;
     background-color: blanchedalmond;
     width: 100%;
-    
-            
         } 
+#calendar {
+    max-width: 900px;
+    max-height: 500px;
+   padding-bottom: 90px;
+    position: relative;
+}

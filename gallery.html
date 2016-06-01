@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
-<!style sheet!>
-    <link rel="stylesheet" type="text/css" href="gallerystyle.css"> 
-
+<!--<!style sheet!>-->
+    <link rel="stylesheet" type="text/css" href="gallerystyle.css">
+<!--slick-->
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!--// Add the new slick-theme.css if you want the default styling-->
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -21,7 +24,7 @@
     <hr>
     <h2>GALLERY</h2>
 
-<!top menu!>    
+<!--<!top menu!>    -->
     <div class="menu">
 <nav>
     <ul>
@@ -48,5 +51,22 @@
 <a href="contact.html">CONTACT</a></center>
 </menu></footer>
 </nav>
+    
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    
+$('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+	
+    });
+  </script>    
 </body>
 </html>

@@ -7,13 +7,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href="fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <script src="fullcalendar/lib/moment.min.js">
+    </script>
+    <script src="fullcalendar/lib/jquery.min.js"></script>
+    <script src="fullcalendar/fullcalendar.min.js"></script>
+    <script src="fullcalendar/gcal.js"></script>
+    
+<script>
 
-    <!style sheet!>
+	$(document).ready(function() {
+
+		$('#calendar').fullCalendar({
+			defaultDate: '2016-05-12',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: 'All Day Event',
+					start: '2016-05-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2016-05-07',
+					end: '2016-05-10'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2016-05-09T16:00:00'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2016-05-16T16:00:00'
+				},
+				{
+					title: 'Conference',
+					start: '2016-05-11',
+					end: '2016-05-13'
+				},
+				{
+					title: 'Meeting',
+					start: '2016-05-12T10:30:00',
+					end: '2016-05-12T12:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2016-05-12T12:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2016-05-12T14:30:00'
+				},
+				{
+					title: 'Happy Hour',
+					start: '2016-05-12T17:30:00'
+				},
+				{
+					title: 'Dinner',
+					start: '2016-05-12T20:00:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2016-05-13T07:00:00'
+				},
+				{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2016-05-28'
+				}
+			]
+		});
+		
+	});
+
+</script>
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+        position: absolute; 
+	}
+
+</style>
+    
+<!--style sheet!-->
     <link rel="stylesheet" type="text/css" href="contactstyle.css">
 
 </head>
-<body>
-
+<body> 
     <h1>THE
         <span style=font-family:Sacramento>Flower Wall</span>
             COMPANY
@@ -34,18 +126,23 @@
     
     <p>We are located in Shanghai, China. Come on in for a visit.
     Visits by appointment only, please! Thank you so much!</p>
-
     <p>PHONE:     +86 21 3461 6839 (+8GMT)<br>
     E-MAIL:     info@theflowercompany.com</p>
+    <div class="container">
+        <div id="calendar"></div></div>
 
-<!second menu!>
-<nav>
+
+<!--<!second menu!>-->
+
+    <nav>
+    
 <footer><menu type="context" id="mainmenu">
 <center><a href="index.html">HOME</a>
 <a href="about.html">ABOUT US</a>
 <a href="gallery.html">GALLERY</a>
 <a href="contact.html">CONTACT</a></center>
 </menu></footer>
+        </div></div></div>    
 </nav>
 </body>
 </html>
